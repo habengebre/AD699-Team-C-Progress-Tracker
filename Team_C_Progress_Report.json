@@ -1,13 +1,13 @@
 {
   "project": "AD699 \u2014 Team C",
   "notebook": "AD699_Team_C_Semester_Project.ipynb",
-  "checked_at": "2026-11-17T09:14:20+00:00",
+  "checked_at": "2026-11-17T09:26:46+00:00",
   "execution": {
     "status": "passed",
     "executed_code_cells": 1,
     "error_count": 0,
     "errors": [],
-    "notebook_sha256": "acd4de99de4fa8f74499defe65e63726f72fd9913d571e30d54043533cfb53b9"
+    "notebook_sha256": "97f404fe26cbdb9f675c277fd96650f80fa4c6e5b8ac1829afd79b6e4ebbbcf7"
   },
   "sections": [
     {
@@ -65,7 +65,7 @@
           "cells": []
         }
       ],
-      "code_cells": 0,
+      "code_cells": 1,
       "markdown_cells": 0,
       "saved_outputs": 0
     },
@@ -386,5 +386,7 @@
   ],
   "overall": 0,
   "method": "Heuristic code/text detection + manual review + optional notebook execution. Not a guarantee of correctness.",
-  "found_sections": []
+  "found_sections": [
+    "preparation"
+  ]
 }
