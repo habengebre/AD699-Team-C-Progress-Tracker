@@ -81,6 +81,32 @@ jobs:
           print("Cells:", len(notebook["cells"]))
           PY
 
+      - name: Execute notebook in restricted Docker
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p notebook_test/input notebook_test/output
+
+          cp AD699_Team_C_Semester_Project.ipynb \
+            notebook_test/input/notebook.ipynb
+
+          docker run --rm \
+            --network none \
+            --read-only \
+            --cap-drop ALL \
+            --security-opt no-new-privileges \
+            --memory 2g \
+            --cpus 2 \
+            --pids-limit 128 \
+            --user "$(id -u):$(id -g)" \
+            --mount type=bind,source="$PWD/notebook_test/input",target=/workspace/input,readonly \
+            --mount type=bind,source="$PWD/notebook_test/output",target=/workspace/output \
+            --mount type=bind,source="$PWD/notebook_test/run_notebook.py",target=/workspace/run_notebook.py,readonly \
+            team-c-notebook-test:latest \
+            python /workspace/run_notebook.py
+
+          echo "Notebook execution report:"
+          cat notebook_test/output/execution_report.json
+
       - name: Generate progress dashboard
         run: |
           python validator.py \
