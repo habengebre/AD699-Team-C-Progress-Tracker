@@ -1,0 +1,25 @@
+
+# Private Team C notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Airbnb datasets
+*.csv
+*.xlsx
+*.parquet
+
+# Google authentication
+gha-creds-*.json
+*service-account*.json
+credentials.json
+token.json
+.env
+.env.*
+
+# Python temporary files
+__pycache__/
+*.pyc
+.venv/
+
+# Local validation files
+review.json
