@@ -74,6 +74,13 @@ jobs:
           print("Cells:", len(notebook["cells"]))
           PY
 
+      - name: Build isolated notebook environment
+        run: |
+          docker build \
+            -f Dockerfile.notebook-test \
+            -t team-c-notebook-test:latest \
+            .
+
       - name: Generate progress dashboard
         run: |
           python validator.py \
