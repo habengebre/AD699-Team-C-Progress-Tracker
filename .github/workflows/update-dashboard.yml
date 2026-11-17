@@ -81,6 +81,29 @@ jobs:
           print("Cells:", len(notebook["cells"]))
           PY
 
+      - name: Verify notebook section markers
+        run: |
+          python - <<'PY'
+          import json
+
+          with open("AD699_Team_C_Semester_Project.ipynb",
+                    encoding="utf-8") as f:
+              notebook = json.load(f)
+
+          markers = []
+          for cell in notebook.get("cells", []):
+              source = cell.get("source", "")
+              text = "".join(source) if isinstance(source, list) else source
+
+              if "AD699:SECTION:" in text:
+                  markers.append(text.strip()[:200])
+
+          print("Total cells:", len(notebook.get("cells", [])))
+          print("Section markers found:", len(markers))
+          for marker in markers:
+              print("Marker:", marker)
+          PY
+
       - name: Execute notebook in restricted Docker
         if: github.event_name == 'workflow_dispatch'
         run: |
