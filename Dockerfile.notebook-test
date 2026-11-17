@@ -1,0 +1,24 @@
+
+FROM python:3.11-slim
+
+WORKDIR /workspace
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV MPLBACKEND=Agg
+
+RUN pip install --no-cache-dir \
+    nbformat \
+    nbclient \
+    ipykernel \
+    pandas \
+    numpy \
+    scipy \
+    scikit-learn \
+    statsmodels \
+    matplotlib \
+    seaborn \
+    plotly \
+    folium \
+    wordcloud
+
+CMD ["python", "--version"]
