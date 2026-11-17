@@ -169,7 +169,13 @@ def main():
  review=json.loads(review_path.read_text(encoding='utf-8')) if review_path.exists() else {}
  execution={'status':'not_run','reason':'Use --execute to test that Python cells run.'}
  outputs=None
- if args.execute:execution,outputs=execute_notebook(nb,path,args.cell_timeout)
+ execution_report = Path(
+    "notebook_test/output/execution_report.json"
+ )
+ if execution_report.is_file():
+    execution=json.loads(execution_report.read_text(encoding='utf-8'))
+ if args.execute:
+    execution,outputs=execute_notebook(nb,path,args.cell_timeout)
  sections=evaluate(data,found,review,execution,outputs)
  report={'project':'AD699 — Team C','notebook':path.name,'checked_at':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
          'execution':execution,'sections':sections,'overall':round(sum(s['progress'] for s in sections)/len(sections)),
