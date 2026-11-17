@@ -109,6 +109,12 @@ jobs:
           echo "Notebook execution report:"
           cat notebook_test/output/execution_report.json
 
+      - name: Clear execution results for scheduled checks
+        if: github.event_name == 'schedule'
+        run: |
+          rm -f notebook_test/output/execution_report.json
+          echo "Scheduled update: notebook execution not tested."
+
       - name: Generate progress dashboard
         run: |
           python validator.py \
