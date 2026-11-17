@@ -1,0 +1,397 @@
+{
+  "project": "AD699 \u2014 Team C",
+  "notebook": "AD699_Team_C_Semester_Project.ipynb",
+  "checked_at": "2026-11-17T05:24:30+00:00",
+  "execution": {
+    "status": "passed",
+    "error_count": 0,
+    "errors": [],
+    "executed_code_cells": 7
+  },
+  "sections": [
+    {
+      "id": "preparation",
+      "title": "Data Preparation & Exploration",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "missing",
+          "title": "Missing-value investigation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "summary",
+          "title": "Neighborhood summary statistics",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "plots",
+          "title": "At least five distinct plot types (human review)",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "map",
+          "title": "Geographic rental map",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "wordcloud",
+          "title": "Neighborhood word cloud",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "interpret",
+          "title": "Written interpretation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "regression",
+      "title": "Multiple Regression",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "price",
+          "title": "Price used as target",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "fit",
+          "title": "Multiple regression estimator",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "metrics",
+          "title": "Regression evaluation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "log",
+          "title": "Log-price consideration",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "explain",
+          "title": "Coefficient and model interpretation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "knn",
+      "title": "K-Nearest Neighbors",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "target",
+          "title": "Amenity target preparation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "model",
+          "title": "KNN classifier",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "scale",
+          "title": "Feature scaling",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "tune",
+          "title": "k tuning / cross-validation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "evaluate",
+          "title": "Classification performance",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "writeup",
+          "title": "Model explanation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "tree",
+      "title": "Classification Tree",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "target",
+          "title": "Host response time target",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "model",
+          "title": "Decision tree classifier",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "cv",
+          "title": "Cross-validation / pruning",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "display",
+          "title": "Tree displayed",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "metrics",
+          "title": "Classification evaluation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "writeup",
+          "title": "Tree interpretation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "transformer",
+      "title": "Transformer Classification",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "quartile",
+          "title": "Quartile target",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "texts",
+          "title": "Three required text fields",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "model",
+          "title": "Transformer model",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "split",
+          "title": "Train/test split",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "metrics",
+          "title": "Held-out evaluation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "fiction",
+          "title": "Fictional rental prediction",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "writeup",
+          "title": "Transformer interpretation",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "clustering",
+      "title": "Clustering",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "model",
+          "title": "Clustering estimator",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "features",
+          "title": "Scaling / feature engineering",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "selection",
+          "title": "Cluster-number assessment",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "visuals",
+          "title": "Cluster visualizations (three required; review)",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "names",
+          "title": "Cluster names and meanings",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusions & Submission",
+      "progress": 0,
+      "status": "Not started",
+      "checks": [
+        {
+          "id": "big_picture",
+          "title": "Overall insights and beneficiaries",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        },
+        {
+          "id": "submission",
+          "title": "Submission readiness (human review)",
+          "status": "missing",
+          "detected": false,
+          "approved": false,
+          "cells": []
+        }
+      ],
+      "code_cells": 0,
+      "markdown_cells": 0,
+      "saved_outputs": 0
+    }
+  ],
+  "overall": 0,
+  "method": "Heuristic code/text detection + manual review + optional notebook execution. Not a guarantee of correctness.",
+  "found_sections": [
+    "clustering",
+    "conclusion",
+    "knn",
+    "preparation",
+    "regression",
+    "transformer",
+    "tree"
+  ]
+}
