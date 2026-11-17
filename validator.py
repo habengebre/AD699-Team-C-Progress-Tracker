@@ -6,6 +6,8 @@ Execute only trusted Team C notebooks in an isolated environment.
 import argparse, datetime as dt, html, json, re, sys, traceback
 from pathlib import Path
 
+import hashlib
+
 SECTIONS = [
  ('preparation','Data Preparation & Exploration'),
  ('regression','Multiple Regression'),
@@ -174,6 +176,12 @@ def main():
  )
  if execution_report.is_file():
     execution=json.loads(execution_report.read_text(encoding='utf-8'))
+    current_hash = hashlib.sha256(
+        path.read_bytes()
+    ).hexdigest()
+    tested_hash = execution.get("notebook_sha256")
+    if not tested_hash or current_hash != tested_hash:
+        execution = {'status': 'outdated', 'reason': 'Notebook has changed since last execution' 'or the execution report has no version identifier.'}
  if args.execute:
     execution,outputs=execute_notebook(nb,path,args.cell_timeout)
  sections=evaluate(data,found,review,execution,outputs)

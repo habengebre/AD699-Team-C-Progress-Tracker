@@ -49,6 +49,16 @@ document.getElementById('execution-errors').textContent =
   e.status === 'not_run'
     ? 'Not tested'
     : (e.error_count ?? 'Unknown');
+
+document.getElementById('execution').textContent =
+  e.status === 'passed'
+    ? '✓ Current notebook execution passed'
+    : e.status === 'failed'
+    ? '✕ Current notebook execution failed'
+    : e.status === 'outdated'
+    ? '⚠ Notebook execution test is outdated'
+    : '○ Code execution not tested';
+
 document.getElementById('execution').textContent=e.status==='passed'?'✓ Code execution passed':e.status==='failed'?'✕ Code execution failed':'○ Code execution not tested';
 document.getElementById('summary').textContent=`${report.sections.length} sections · ${report.found_sections.length} marked in notebook · ${report.sections.filter(s=>s.status==='Completed').length} fully completed`;
 if(e.errors?.length){let box=el('div','alert');box.append(el('strong','',`${e.error_count} notebook execution error(s):`));e.errors.slice(0,10).forEach(z=>box.append(el('p','small',`Cell ${z.cell??'?'}: ${z.type} — ${z.message}`)));document.getElementById('errors').append(box)}
