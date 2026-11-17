@@ -10,11 +10,19 @@ from nbclient import NotebookClient
 notebook_path = Path("/workspace/input/notebook.ipynb")
 report_path = Path("/workspace/output/execution_report.json")
 
+import hashlib
+
+notebook_hash = hashlib.sha256(
+    notebook_path.read_bytes()
+).hexdigest()
+
 report = {
     "status": "not_run",
     "executed_code_cells": 0,
     "error_count": 0,
-    "errors": []
+    "errors": [],
+    "notebook_sha256": notebook_hash
+
 }
 
 try:
