@@ -1,12 +1,10 @@
 {
   "project": "AD699 \u2014 Team C",
   "notebook": "AD699_Team_C_Semester_Project.ipynb",
-  "checked_at": "2026-11-17T05:24:30+00:00",
+  "checked_at": "2026-11-17T08:05:03+00:00",
   "execution": {
-    "status": "passed",
-    "error_count": 0,
-    "errors": [],
-    "executed_code_cells": 7
+    "status": "not_run",
+    "reason": "Use --execute to test that Python cells run."
   },
   "sections": [
     {
@@ -385,13 +383,5 @@
   ],
   "overall": 0,
   "method": "Heuristic code/text detection + manual review + optional notebook execution. Not a guarantee of correctness.",
-  "found_sections": [
-    "clustering",
-    "conclusion",
-    "knn",
-    "preparation",
-    "regression",
-    "transformer",
-    "tree"
-  ]
+  "found_sections": []
 }
