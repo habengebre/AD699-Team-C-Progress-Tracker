@@ -1,13 +1,10 @@
 {
   "project": "AD699 \u2014 Team C",
   "notebook": "AD699_Team_C_Semester_Project.ipynb",
-  "checked_at": "2026-11-17T09:26:46+00:00",
+  "checked_at": "2026-11-17T18:46:10+00:00",
   "execution": {
-    "status": "passed",
-    "executed_code_cells": 1,
-    "error_count": 0,
-    "errors": [],
-    "notebook_sha256": "97f404fe26cbdb9f675c277fd96650f80fa4c6e5b8ac1829afd79b6e4ebbbcf7"
+    "status": "not_run",
+    "reason": "Use --execute to test that Python cells run."
   },
   "sections": [
     {
@@ -65,8 +62,8 @@
           "cells": []
         }
       ],
-      "code_cells": 1,
-      "markdown_cells": 0,
+      "code_cells": 6,
+      "markdown_cells": 6,
       "saved_outputs": 0
     },
     {
