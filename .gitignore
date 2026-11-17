@@ -23,3 +23,10 @@ __pycache__/
 
 # Local validation files
 review.json
+
+
+
+# Temporary notebook execution files
+notebook_test/input/
+notebook_test/output/
+notebook_test/*.log
